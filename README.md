@@ -28,15 +28,15 @@ In order to install and run this project locally, you would need to have the fol
 
 Step 0:
 
-Note ‼️ the application uses Clerk for Authentication and User Management, therefore, you need to create Clerk account here and sets the CLERK_PUBLISHABLE_KEY and CLERK_SECRET_KEY environment variables in .env file.
+The app use Json Web Tokens [JWT](https://jwt.io/) for authentication purposes.
 
-Note ‼️ the application uses Mongo Db as database, therefore, you need to create Mongo DB atlas account.
+Note ‼️ the application uses Mongo Db as database, therefore, you need to create [Mongo DB atlas account](https://www.mongodb.com/cloud/atlas/register).
 
 Step 1:
 
 Download or clone this repo by using the link below:
 
-git clone https://github.com/sandeepdev777/Imaginify.git
+git clone https://github.com/sandeepdev777/Social-Pixel.git
 
 after this two files will be cloned to your respective folder(client, server).
 
