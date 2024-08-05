@@ -25,14 +25,6 @@ const __dirname = path.dirname(__filename);
 dotenv.config();
 const app = express();
 
-//************************ */
-app.use(cors(
-    {
-    origin:"*", // this is used to allow all the domains to access the data
-    methods:["GET","POST","PUT","DELETE"], // this is used to allow the methods to access the data
-    credentials:true // this is used to allow the credentials to access the data
-}
-));
 
 app.use(express.json());
 app.use(helmet());
@@ -56,8 +48,10 @@ const upload = multer({ storage }); // any time we want to upload a file, we use
 
 // ROUTE FOR REGISTERING A USER
 /* ROUTES  used to upload the files . in this upload.single is middleware*/
+
 app.post("/auth/register", upload.single("picture"), register);
 app.post("/posts", verifyToken, upload.single("picture"), createPost);
+
 
 
 
@@ -84,4 +78,9 @@ mongoose.connect(process.env.MONGO_URL, {
    Post.insertMany(posts); */
 }).catch((err) => {
     console.log(`${err} did not connect`);
+});
+
+app.use(express.static(path.join(path.resolve(), '../client/build')));
+app.get('*', (req, res) => {
+    res.sendFile(path.join(path.resolve(), '../client/build/index.html'));
 });
