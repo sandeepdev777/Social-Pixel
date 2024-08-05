@@ -34,7 +34,7 @@ const UserWidget=({userId,picturePath})=>{
                 setUser(data);
         };
         getUser();
-    },[userId]);
+    },[userId,token]);
 
      if(!user) return null;
 
