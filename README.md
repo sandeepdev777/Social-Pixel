@@ -1,1 +1,0 @@
-Built a image posting social media app using Mongo db, Express js, Node js, React js, Material Ui, Redux tool kit, React persist. 
