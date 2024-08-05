@@ -9,7 +9,7 @@ return(
          style={{objectFit:"cover",borderRadius:"50%"}}
          height={size}
          alt="user"
-         src={`http://localhost:3001/assets/${image}`}  // 3 BACKEND CONNECTION
+         src={`http://localhost:3000/assets/${image}`}  // 3 BACKEND CONNECTION
          />
     </Box>
 )

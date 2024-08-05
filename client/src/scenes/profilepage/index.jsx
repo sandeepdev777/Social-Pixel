@@ -17,7 +17,7 @@ const ProfilePage = () => {
 
   // this grabs all the detail form that server and stores them in the state
   const getUser=async()=>{
-    const response=await fetch(`http://localhost:3001/users/${userId}`,
+    const response=await fetch(`http://localhost:3000/users/${userId}`,
     {
         method:"GET",
         headers:{ Authorization: `Bearer ${token}` },

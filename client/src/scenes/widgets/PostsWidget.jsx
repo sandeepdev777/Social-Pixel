@@ -10,7 +10,7 @@ const PostsWidget = ({userId,isProfile=false}) => {
 
     // this grabs all the posts from the server and stores them in the state
     const getPosts= async()=>{
-        const response =await fetch("http://localhost:3001/posts",{
+        const response =await fetch("http://localhost:3000/posts",{
             method:"GET",   
             headers:{ Authorization: `Bearer ${token}` },
         })
@@ -20,7 +20,7 @@ const PostsWidget = ({userId,isProfile=false}) => {
 
     // it gives the posts of a particular user
     const getUserPosts= async()=>{
-        const response =await fetch(`http://localhost:3001/posts/${userId}/posts`,{
+        const response =await fetch(`http://localhost:3000/posts/${userId}/posts`,{
             method:"GET",   
             headers:{ Authorization: `Bearer ${token}` },
         })
