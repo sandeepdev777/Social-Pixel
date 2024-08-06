@@ -83,7 +83,7 @@ mongoose.connect(process.env.MONGO_URL, {
     console.log(`${err} did not connect`);
 });
 
-app.use(express.static(path.join(path.resolve(), '../client/build')));
+app.use(express.static(path.join(path.resolve(), './client/build')));
 app.get('*', (req, res) => {
-    res.sendFile(path.join(path.resolve(), '../client/build/index.html'));
+    res.sendFile(path.join(path.resolve(), './client/build/index.html'));
 });
