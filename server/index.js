@@ -80,8 +80,8 @@ mongoose.connect(process.env.MONGO_URL, {
    });
 
    // ADDING THE FAKE DATA ONE TIME
-   User.insertMany(users);
-   Post.insertMany(posts);
+/*    User.insertMany(users);
+   Post.insertMany(posts); */
 }).catch((err) => {
     console.log(`${err} did not connect`);
 });
