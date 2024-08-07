@@ -24,10 +24,6 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 dotenv.config();
 
-///*************
-const express = require('express');
-const helmet = require('helmet');
-//***********
 const app = express();
 
 
@@ -72,18 +68,7 @@ app.use('/auth', authRoutes);
 app.use("/users",userRoutes);
 app.use("/posts",postRoutes);
 
-//*************
-app.use(
-  helmet.contentSecurityPolicy({
-    directives: {
-      defaultSrc: ["'self'"],
-      connectSrc: ["'self'", "http://localhost:3000"],
-      // Add other directives as needed
-    },
-  })
-);
 
-//************
 // MONGOOSE SETUP
 const PORT=process.env.PORT || 6001;
 mongoose.connect(process.env.MONGO_URL, {
