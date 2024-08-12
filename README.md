@@ -1,0 +1,76 @@
+
+
+📝 Description
+
+
+Social Pixel is a dynamic social media platform enabling users to share images and text. Developed with the MERN stack, it leverages Material-UI for a sleek, responsive front-end and implements JWT for robust, secure authentication.
+
+✨ Technologies Used
+
+Social-Pixel is built using the following technologies:
+
+[![My Skills](https://skillicons.dev/icons?i=react,express,nodejs,mongodb,materialui)](https://skillicons.dev)
+
+🧰 Get Started
+
+To get this project up and running in your development environment, follow these step-by-step instructions.
+
+Prerequisites:
+
+In order to install and run this project locally, you would need to have the following installed on your local machine.
+
+[Node.js](https://nodejs.org/en/) 
+
+[NPM](https://docs.npmjs.com/getting-started) 
+
+[Git](https://git-scm.com/downloads)
+
+⚙️ Installation and Run Locally
+
+Step 0:
+
+Note ‼️ the application uses JWT(Json Web Tokens) for Authentication.
+
+Note ‼️ the application uses Mongo Db as database, therefore, you need to create [Mongo DB atlas account](https://www.mongodb.com/cloud/atlas/register). And connection string to your ```.env``` file
+
+Step 1:
+
+Download or clone this repo by using the link below:
+
+``` git clone https://github.com/sandeepdev777/Social-Pixel.git```
+
+step 2:
+
+Execute the following command in the server directory of the downloaded repo in order to install dependencies:
+
+```npm install```
+
+Step 3:
+
+Execute the following command in server folder in order to run the development server locally:
+
+```npm run build```
+
+```npm start```
+
+Step 4:
+
+Open http://localhost:3000 with your browser to see the result.
+
+step 5:
+
+**Use the following credentials to log into the app**
+
+Email id- sandeepdemo7128@gmail.com
+
+Password- 7128
+
+🔒 Environment Variables
+
+Environment variables can be used for configuration. They must be set before running the app.
+
+Environment variables are variables that are set in the operating system or shell, typically used to configure programs.
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
