@@ -27,17 +27,18 @@ In order to install and run this project locally, you would need to have the fol
 
 ⚙️ Installation and Run Locally
 
+
 Step 0:
-
-Note ‼️ the application uses JWT(Json Web Tokens) for Authentication.
-
-Note ‼️ the application uses Mongo Db as database, therefore, you need to create [Mongo DB atlas account](https://www.mongodb.com/cloud/atlas/register). And connection string to your ```.env``` file
-
-Step 1:
 
 Download or clone this repo by using the link below:
 
 ``` git clone https://github.com/sandeepdev777/Social-Pixel.git```
+
+Step 1:
+
+Note ‼️ the application uses JWT(Json Web Tokens) for Authentication. Create an ```.env``` file in your server folder and add ```PORT=3000``` the add ```JWTSECRET="any string "```
+
+Note ‼️ the application uses Mongo Db as database, therefore, you need to create [Mongo DB atlas account](https://www.mongodb.com/cloud/atlas/register). Then paste the connection string as ```MONGO_URL="connection string"``` to your ```.env``` file
 
 step 2:
 
@@ -50,6 +51,8 @@ Step 3:
 Execute the following command in server folder in order to run the development server locally:
 
 ```npm run build```
+
+Now got to the parent folder and run the following command.
 
 ```npm start```
 
