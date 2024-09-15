@@ -58,7 +58,7 @@ const Form = () => {
     const isLogin=pageType==="login";
     const isRegister=pageType==="register";
 
-    const register=async(values,onSubmitProps)=>{  // this func sends form dataalong with the image
+    const register=async(values,onSubmitProps)=>{  // this func sends form data along with the image
         const formData=new FormData();
         for(let value in values){
             formData.append(value,values[value]);
