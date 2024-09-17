@@ -1,12 +1,12 @@
 🌐 Live Demo
 
-Explore the live demonstration of the project: Social Pixel
+Explore the live demonstration of the project: [Social Pixel](https://social-pixel.vercel.app/)
 
 ** Use the following credentials to login the app**
 
 email-sandeepdemo7128@gmail.com
 
-password- sandeep7128@
+password- 7128
 
 📝 Description
 
@@ -60,21 +60,18 @@ Execute the following command in server folder in order to run the development s
 
 ```npm run build```
 
-Now got to the parent folder and run the following command.
+Now got to the client  folder and run the following command.
 
 ```npm start```
 
+step4: Now got to server folder and runt the following command.
+
+```node index.js```
+
 Step 4:
 
-Open http://localhost:3000 with your browser to see the result.
+Open http://localhost:3000 in your browser to see the result.
 
-step 5:
-
-**Use the following credentials to log into the app**
-
-Email id- sandeepdemo7128@gmail.com
-
-Password- 7128
 
 🔒 Environment Variables
 
