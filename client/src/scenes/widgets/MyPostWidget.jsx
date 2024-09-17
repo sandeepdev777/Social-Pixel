@@ -46,7 +46,7 @@ import {
             formData.append("picturePath",image.name);
         }
 
-        const response = await fetch(`http://localhost:3000/posts`,{
+        const response = await fetch(`https://social-pixel.onrender.com/posts`,{
             method:'POST',
             headers:{Authorization: `Bearer ${token}` },  // upadating the database with the new post
             body: formData,

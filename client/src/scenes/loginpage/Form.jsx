@@ -67,7 +67,7 @@ const Form = () => {
     
     // FIRST COONECTION TO THE BACKEND
     const savedUserResponse=await fetch(
-        "http://localhost:3000/auth/register",  // sending the formdata to the backend api
+        "https://social-pixel.onrender.com/auth/register",  // sending the formdata to the backend api
         {
             method:"POST",
             body:formData,
@@ -88,7 +88,7 @@ const Form = () => {
  // 2 BACKEND CONNECTION
     const login=async(values,onSubmitProps)=>{
         const loggedInResponse=await fetch(     // sending the data of login to backend for authentication
-            "http://localhost:3000/auth/login",
+            "https://social-pixel.onrender.com/auth/login",
             {
                 method:"POST",
                 headers:{

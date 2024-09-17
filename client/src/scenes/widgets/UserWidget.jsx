@@ -26,7 +26,7 @@ const UserWidget=({userId,picturePath})=>{
 
     useEffect(()=>{ // this renders the user details when the user logs in
         async function getUser(){
-            const response=await fetch(`http://localhost:3000/users/${userId}`,{
+            const response=await fetch(`https://social-pixel.onrender.com/users/${userId}`,{
                 method:"GET",
                 headers:{ Authorization:`Bearer ${token}`}
                 })
