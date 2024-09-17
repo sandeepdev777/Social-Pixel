@@ -1,4 +1,12 @@
+🌐 Live Demo
 
+Explore the live demonstration of the project: Social Pixel
+
+** Use the following credentials to login the app**
+
+email-sandeepdemo7128@gmail.com
+
+password- sandeep7128@
 
 📝 Description
 
