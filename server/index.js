@@ -27,17 +27,14 @@ dotenv.config();
 const app = express();
 
 
-app.use(cors({
-    origin:"*",
-    methods: ["GET","POST","PUT","DELETE","PATCH"],
-}))
+
 app.use(express.json());
 app.use(helmet());
 app.use(helmet.crossOriginResourcePolicy({policy:"cross-origin"}));
 app.use(morgan('common'));
 app.use(bodyParser.json({limit: "30mb", extended: true}));
 app.use(bodyParser.urlencoded({limit: "30mb", extended: true}));
-//app.use(cors());
+app.use(cors());
 app.use("/assets",express.static(path.join(__dirname, 'public/assets')));
 
 /*this stores the information uploaded by any user into the public/assets */
